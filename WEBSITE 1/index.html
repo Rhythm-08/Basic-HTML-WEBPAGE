@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Website Design</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section>
+<div class ="logo">Creative</div>
+<img src ="images\bg.jpg" class="bg">
+<div class ="content"> 
+    <h2>Let's Make<br> Something Creative</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Doloribus consectetur possimus voluptas adipisci nulla 
+       ducimus suscipit vel laborum sunt pariatur eius provident
+        earum quos doloremque, dolorem nihil architecto? Eius, eum.</p>
+        <a href="#">Get Started</a>
+</div>
+   <p class ="copyrightText">@2021. Rhythm Creations</p>
+    </section>
+    <div class="menutoggle" onclick="toggleMenu();"></div>
+    <div class ="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li> <a href="#"><img src="images/facebook.png"></a> </li>
+                <li> <a href="#"><img src="images/twitter.png"></a> </li>
+                <li> <a href="#"><img src="images/instagram.png"></a> </li>
+                
+            </ul>
+            <a href="mailto:you@email.com" class="emailBx"><img src="images/email.png" > </a>
+            
+        </div>
+    </div>
+        <script type="text/javascript">
+        function toggleMenu(){
+        var menutoggle =document.querySelector('.menutoggle');
+        var navigation =document.querySelector('.navigation');
+        menutoggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        
+
+        }
+        </script>
+</body>
+</html>
